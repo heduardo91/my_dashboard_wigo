@@ -14,13 +14,26 @@ st.set_page_config(page_title = "Wigo Motors",
 
 st.markdown("""
 <style>
-div[data-testid="metric-container"]{
-    background-color:#F5F7FA;
-    border:1px solid #E3E6EA;
+
+div[data-testid="stMetric"]{
+    background-color:#1f2937;
+    border:1px solid #3b82f6;
     padding:15px;
     border-radius:12px;
-    box-shadow:2px 2px 8px rgba(0,0,0,0.08);
+    box-shadow:0px 4px 10px rgba(0,0,0,0.3);
 }
+
+div[data-testid="stMetricLabel"]{
+    font-size:18px;
+    font-weight:bold;
+}
+
+div[data-testid="stMetricValue"]{
+    color:#4FC3F7;
+    font-size:30px;
+    font-weight:bold;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -73,13 +86,26 @@ st.subheader("Indicadores:")
 
 st.markdown("""
 <style>
-div[data-testid="metric-container"]{
-    background-color:#F5F7FA;
-    border:1px solid #E3E6EA;
+
+div[data-testid="stMetric"]{
+    background-color:#1f2937;
+    border:1px solid #3b82f6;
     padding:15px;
     border-radius:12px;
-    box-shadow:2px 2px 8px rgba(0,0,0,0.08);
+    box-shadow:0px 4px 10px rgba(0,0,0,0.3);
 }
+
+div[data-testid="stMetricLabel"]{
+    font-size:18px;
+    font-weight:bold;
+}
+
+div[data-testid="stMetricValue"]{
+    color:#4FC3F7;
+    font-size:30px;
+    font-weight:bold;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
