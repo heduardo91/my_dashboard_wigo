@@ -57,7 +57,9 @@ st.dataframe(df_filtrado)
 
 
 # INDICADORES GENERALES: 
-
+st.markdown("""
+<hr style="height:3px;border:none;background:#1E88E5;">
+""", unsafe_allow_html=True)
 st.subheader("Indicadores:")
 
 c1, c2, c3, c4 = st.columns(4)        
