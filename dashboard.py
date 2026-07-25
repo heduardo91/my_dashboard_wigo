@@ -12,6 +12,9 @@ df = cargar_datos() # UTILIZANDO LA FUNCIÓN QUE NOS DEVUELVE EL DATAFRAME (DF)
 st.set_page_config(page_title = "Wigo Motors", 
                    layout="wide")      
 
+st.title("WIGO MOTORS S.A.C.")                      
+st.subheader("Buscador comercial") 
+
 st.markdown("""
 <hr style="height:3px;border:none;background:#1E88E5;">
 """, unsafe_allow_html=True)
