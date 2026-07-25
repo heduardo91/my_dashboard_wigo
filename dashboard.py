@@ -25,6 +25,10 @@ color:white;
 </div>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+<hr style="height:3px;border:none;background:#1E88E5;">
+""", unsafe_allow_html=True)
+
 st.sidebar.header("Buscador")
 tipo_busqueda = st.sidebar.selectbox("Seleccione tipo de búsqueda", ["Marca", "Asesor comercial", "Sede"])  
 
