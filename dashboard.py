@@ -123,6 +123,17 @@ c6.metric("Precio más bajo", f"S/{precio_minimo(df_filtrado):,.2f}")
 
 
 # GRÁFICOS - DASHBOARD 
+st.markdown("""
+<div style="
+background:#1565C0;
+padding:8px;
+border-radius:6px;
+color:white;
+font-size:22px;
+font-weight:bold;">
+📈 Gráficos
+</div>
+""", unsafe_allow_html=True)
 
 st.plotly_chart(grafico_ventas(df_filtrado))  
 st.plotly_chart(grafico_promedio(df_filtrado)) 
