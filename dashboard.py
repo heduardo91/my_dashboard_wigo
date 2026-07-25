@@ -58,9 +58,16 @@ st.dataframe(df_filtrado)
 
 # INDICADORES GENERALES: 
 st.markdown("""
-<hr style="height:3px;border:none;background:#1E88E5;">
+<style>
+div[data-testid="metric-container"]{
+    background-color:#F5F7FA;
+    border:1px solid #E3E6EA;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:2px 2px 8px rgba(0,0,0,0.08);
+}
+</style>
 """, unsafe_allow_html=True)
-st.subheader("Indicadores:")
 
 c1, c2, c3, c4 = st.columns(4)        
 
