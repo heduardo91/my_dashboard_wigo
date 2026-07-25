@@ -3,11 +3,7 @@ from conexion import cargar_datos
 from indicadores import *
 from graficos import *
 
-# UTILIZANDO LA FUNCIÓN QUE NOS DEVUELVE EL DATAFRAME (DF) CON ANIMACION DE CARGA
-with st.spinner("Cargando información..."):  
-    df = cargar_datos()
-
-st.success("Datos cargados correctamente") 
+df = cargar_datos() # UTILIZANDO LA FUNCIÓN QUE NOS DEVUELVE EL DATAFRAME (DF)
 
 # CONFIGURACIÓN DE DASHBOARD CON STREAMLIT:
 # ----------------------------------------
@@ -27,7 +23,7 @@ st.markdown("""
 #ENCABEZADO CON COLOR DE FONDO
 st.markdown("""
 <div style="
-background:linear-gradient(90deg,#1565C0,#1E88E5);
+background:linear-gradient(90deg,#1565C0,#D9E2EC);
 padding:20px;
 border-radius:10px;
 text-align:center;
@@ -40,7 +36,7 @@ color:white;
 
 #SEPARADOR AZUL
 st.markdown("""
-<hr style="height:3px;border:none;background:#1E88E5;">
+<hr style="height:3px;border:#D9E2EC;background:#1E88E5;">
 """, unsafe_allow_html=True)
 
 st.sidebar.header("Buscador")
@@ -76,7 +72,7 @@ st.markdown("""
 background:#0F4C81;
 padding:8px;
 border-radius:6px;
-color:white;
+color:#D9E2EC;
 font-size:22px;
 font-weight:bold;">
 📊 Indicadores
