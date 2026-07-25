@@ -12,11 +12,17 @@ df = cargar_datos() # UTILIZANDO LA FUNCIÓN QUE NOS DEVUELVE EL DATAFRAME (DF)
 st.set_page_config(page_title = "Wigo Motors", 
                    layout="wide")      
 
-st.title("WIGO MOTORS S.A.C.")                      
-st.subheader("Buscador comercial") 
-
 st.markdown("""
-<hr style="height:3px;border:none;background:#1E88E5;">
+<div style="
+background:linear-gradient(90deg,#0F4C81,#1E88E5);
+padding:20px;
+border-radius:10px;
+text-align:center;
+color:white;
+">
+<h1>🚗 WIGO MOTORS S.A.C.</h1>
+<h4>Dashboard Comercial</h4>
+</div>
 """, unsafe_allow_html=True)
 
 st.sidebar.header("Buscador")
