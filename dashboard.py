@@ -134,6 +134,7 @@ font-weight:bold;">
 📈 Gráficos
 </div>
 """, unsafe_allow_html=True)
+st.markdown("")
 
 
 st.plotly_chart(grafico_ventas(df_filtrado))  
