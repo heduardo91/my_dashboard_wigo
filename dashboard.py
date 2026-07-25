@@ -3,8 +3,11 @@ from conexion import cargar_datos
 from indicadores import *
 from graficos import *
 
+# UTILIZANDO LA FUNCIÓN QUE NOS DEVUELVE EL DATAFRAME (DF) CON ANIMACION DE CARGA
+with st.spinner("Cargando información..."):  
+    df = cargar_datos()
 
-df = cargar_datos() # UTILIZANDO LA FUNCIÓN QUE NOS DEVUELVE EL DATAFRAME (DF)
+st.success("Datos cargados correctamente") 
 
 # CONFIGURACIÓN DE DASHBOARD CON STREAMLIT:
 # ----------------------------------------
@@ -24,7 +27,7 @@ st.markdown("""
 #ENCABEZADO CON COLOR DE FONDO
 st.markdown("""
 <div style="
-background:linear-gradient(90deg,#0F4C81,#1E88E5);
+background:linear-gradient(90deg,#1565C0,#1E88E5);
 padding:20px;
 border-radius:10px;
 text-align:center;
