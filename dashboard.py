@@ -68,8 +68,6 @@ st.dataframe(df_filtrado)
 
 
 # INDICADORES GENERALES: 
-st.subheader("Indicadores:")
-
 st.markdown("""
 <div style="
 background:#0F4C81;
