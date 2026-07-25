@@ -135,5 +135,6 @@ font-weight:bold;">
 </div>
 """, unsafe_allow_html=True)
 
+
 st.plotly_chart(grafico_ventas(df_filtrado))  
 st.plotly_chart(grafico_promedio(df_filtrado)) 
