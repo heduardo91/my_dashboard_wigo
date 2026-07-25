@@ -13,15 +13,16 @@ st.set_page_config(page_title = "Wigo Motors",
                    layout="wide")      
 
 st.markdown("""
-<style>
-div[data-testid="metric-container"]{
-    background-color:#F5F7FA;
-    border:1px solid #E3E6EA;
-    padding:15px;
-    border-radius:12px;
-    box-shadow:2px 2px 8px rgba(0,0,0,0.08);
-}
-</style>
+<div style="
+background:linear-gradient(90deg,#0F4C81,#1E88E5);
+padding:20px;
+border-radius:10px;
+text-align:center;
+color:white;
+">
+<h1>🚗 WIGO MOTORS S.A.C.</h1>
+<h4>Dashboard Comercial</h4>
+</div>
 """, unsafe_allow_html=True)
 
 st.sidebar.header("Buscador")
