@@ -12,8 +12,16 @@ df = cargar_datos() # UTILIZANDO LA FUNCIÓN QUE NOS DEVUELVE EL DATAFRAME (DF)
 st.set_page_config(page_title = "Wigo Motors", 
                    layout="wide")      
 
+#FONDO SUAVE
+st.markdown("""
+<style>
+.stApp{
+    background-color:#F8F9FA;
+}
+</style>
+""", unsafe_allow_html=True)
 
-
+#ENCABEZADO CON COLOR DE FONDO
 st.markdown("""
 <div style="
 background:linear-gradient(90deg,#0F4C81,#1E88E5);
@@ -27,6 +35,7 @@ color:white;
 </div>
 """, unsafe_allow_html=True)
 
+#SEPARADOR AZUL
 st.markdown("""
 <hr style="height:3px;border:none;background:#1E88E5;">
 """, unsafe_allow_html=True)
@@ -61,6 +70,20 @@ st.dataframe(df_filtrado)
 # INDICADORES GENERALES: 
 st.subheader("Indicadores:")
 
+st.markdown("""
+<div style="
+background:#0F4C81;
+padding:8px;
+border-radius:6px;
+color:white;
+font-size:22px;
+font-weight:bold;">
+📊 Indicadores
+</div>
+""", unsafe_allow_html=True)
+
+
+#INDICADORES EN TARJETAS
 st.markdown("""
 <style>
 
