@@ -137,5 +137,12 @@ font-weight:bold;">
 st.markdown("")
 
 
-st.plotly_chart(grafico_ventas(df_filtrado))  
-st.plotly_chart(grafico_promedio(df_filtrado)) 
+g1, g2 = st.columns(2)
+
+with g1:
+    st.plotly_chart(grafico_ventas(df_filtrado),
+                    use_container_width=True)
+
+with g2:
+    st.plotly_chart(grafico_promedio(df_filtrado),
+                    use_container_width=True)
