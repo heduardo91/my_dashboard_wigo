@@ -14,9 +14,11 @@ st.set_page_config(page_title = "Wigo Motors",
 #FONDO SUAVE
 st.markdown("""
 <style>
+
 .stApp{
-    background-color:#F8F9FA;
+    background-color:#0E1117;
 }
+
 </style>
 """, unsafe_allow_html=True)
 
